@@ -1,0 +1,44 @@
+# Ignore node_modules directory
+node_modules
+
+# Ignore Visual Studio Code settings
+.vscode
+
+# Ignore package-lock.json file
+package-lock.json
+
+# Ignore environment variables file
+.env
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore coverage directory
+coverage/
+
+# Ignore backup files
+*.bak
+*.swp
+*.swo
+*~
+
+# Ignore distribution or build directories
+dist/
+build/
+
+# Ignore local configuration files
+.idea/
+.project
+.settings/
+
+# Ignore editor-specific configuration files
+*.sublime-project
+*.sublime-workspace
+*.idea/
+
+# Ignore node_modules directories in subdirectories
+**/node_modules/
