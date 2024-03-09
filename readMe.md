@@ -1,49 +1,49 @@
 # BETMASTER
 
-BetMaster es una aplicación de apuestas que te permite simular partidos y realizar apuestas en tiempo real.
+BetMaster is a betting application that allows you to simulate matches and place bets in real-time.
 
-## Arquitectura del Servidor
+## Server Architecture
 
-La arquitectura del servidor se basa en una estructura de endpoints JSON, siguiendo un patrón Modelo-Vista-Controlador (MVC) básico con Express y Node.js.
+The server architecture is based on a JSON endpoint structure, following a basic Model-View-Controller (MVC) pattern with Express and Node.js.
 
-### Endpoints JSON
+### JSON Endpoints
 
-Los endpoints JSON proporcionan una interfaz para interactuar con la lógica de la aplicación y acceder a los recursos necesarios para realizar apuestas, simular partidos, etc.
+JSON endpoints provide an interface to interact with the application logic and access resources necessary for placing bets, simulating matches, etc.
 
-### Patrón MVC
+### MVC Pattern
 
-La arquitectura MVC divide la aplicación en tres componentes principales:
+The MVC architecture divides the application into three main components:
 
-- **Modelo (Model)**: Representa la estructura de los datos y la lógica de la aplicación. Maneja la interacción con la base de datos y la manipulación de datos.
+- **Model**: Represents the data structure and application logic. Handles interaction with the database and data manipulation.
 
-- **Vista (View)**: Es responsable de la presentación de la información al usuario. En el caso de una API JSON, la vista puede ser la representación de los datos devueltos por los endpoints.
+- **View**: Responsible for presenting information to the user. In the case of a JSON API, the view can be the representation of data returned by endpoints.
 
-- **Controlador (Controller)**: Actúa como intermediario entre el modelo y la vista. Procesa las solicitudes del cliente, interactúa con el modelo y devuelve la respuesta adecuada al cliente.
+- **Controller**: Acts as an intermediary between the model and the view. Processes client requests, interacts with the model, and returns the appropriate response to the client.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **Node.js**: Entorno de ejecución para JavaScript en el lado del servidor.
-- **Express.js**: Framework web para Node.js que simplifica la creación de aplicaciones web y la gestión de rutas.
-- **PostgreSQL**: Sistema de gestión de bases de datos relacional, utilizado para almacenar datos estructurados como usuarios, partidos, apuestas, etc.
-- **TypeORM**: ORM (Object-Relational Mapping) para TypeScript y JavaScript que simplifica la interacción con la base de datos PostgreSQL y facilita la manipulación de datos.
+- **Node.js**: Runtime environment for JavaScript on the server-side.
+- **Express.js**: Web framework for Node.js that simplifies web application creation and route management.
+- **PostgreSQL**: Relational database management system used to store structured data such as users, matches, bets, etc.
+- **TypeORM**: Object-Relational Mapping (ORM) for TypeScript and JavaScript that simplifies interaction with the PostgreSQL database and facilitates data manipulation.
 
-## Instalación y Ejecución
+## Installation and Execution
 
-1. Clona este repositorio: `git clone https://github.com/jcom-dev/betmaster.git`
-2. Entra al directorio del servidor: `cd betmaster-dev/server`
-3. Instala las dependencias: `npm install`
-4. Inicia el servidor: `npm start`
+1. Clone this repository: `git clone https://github.com/jcom-dev/betmaster.git`
+2. Navigate to the server directory: `cd betmaster-dev/server`
+3. Install dependencies: `npm install`
+4. Start the server: `npm start`
 
-## Contribución
+## Contribution
 
-Si deseas contribuir a BetMaster, por favor sigue estos pasos:
+If you wish to contribute to BetMaster, please follow these steps:
 
-1. Haz un fork del repositorio.
-2. Crea una nueva rama para tu característica: `git checkout -b feature/nueva-caracteristica`
-3. Realiza tus cambios y haz commits: `git commit -am 'Agrega una nueva característica'`
-4. Sube tu rama: `git push origin feature/nueva-caracteristica`
-5. Envía una solicitud de extracción.
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature/new-feature`
+3. Make your changes and commit: `git commit -am 'Add a new feature'`
+4. Push your branch: `git push origin feature/new-feature`
+5. Submit a pull request.
 
-## Licencia
+## License
 
-BetMaster se distribuye bajo la licencia MIT. Ver el archivo `LICENSE` para más detalles.
+BetMaster is distributed under the MIT license. See the `LICENSE` file for more details.
