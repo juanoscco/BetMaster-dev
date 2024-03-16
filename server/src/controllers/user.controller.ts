@@ -5,6 +5,7 @@ import * as jwt from "jsonwebtoken";
 const config = {
   jwtSecret: "secreto_para_generar_el_token_jwt",
 };
+
 class UserController {
   async register(req: Request, res: Response) {
     const { username, email, password } = req.body;
