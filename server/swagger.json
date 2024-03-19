@@ -4,12 +4,17 @@
         "version": "1.0.0",
         "title": "BetMaster Server",
         "description": "Documentation for the API of BetMaster, an app for betting."
-      },
+    },
     "servers": [
         {
-          "url": "swagger.json - generate server url"
+            "url": "https://betmaster-dev.onrender.com/",
+            "description": "Production server"
+        },
+        {
+            "url": "http://localhost:8080/",
+            "description": "Local server"
         }
-      ],
+    ],
     "components": {
         "securitySchemes": {
             "BearerAuth": {
